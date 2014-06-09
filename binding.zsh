@@ -1,3 +1,3 @@
-bindkey "^A" begginning-of-line
+bindkey "^A" beginning-of-line
 bindkey "^Z" end-of-line
 
