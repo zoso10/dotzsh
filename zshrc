@@ -13,3 +13,4 @@ source ~/.zsh/setopt.zsh
 source ~/.zsh/prompt.zsh
 source ~/.zsh/completion.zsh
 source ~/.zsh/alias.zsh
+source ~/.zsh/binding.zsh
