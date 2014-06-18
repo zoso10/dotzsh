@@ -28,3 +28,6 @@ alias gl'git pull'
 alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zsh/zshrc'"
 alias zshrc='vim ~/.zsh/zshrc && reload'
 
+# Vim
+alias vimrc='vim ~/.vim/vimrc'
+
