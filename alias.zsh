@@ -22,7 +22,7 @@ alias gd='git diff'
 alias gm='git commit'
 alias gma='git commit -a'
 alias gc='git checkout'
-alias gl'git pull'
+alias gl='git pull'
 
 # ZSH
 alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zsh/zshrc'"
