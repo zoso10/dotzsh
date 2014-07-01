@@ -4,9 +4,8 @@
 source ~/.bash_profile
 
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
-
 export PS1="[%*][%n@%M]$ "
+export EDITOR=vim
 
 source ~/.zsh/colors.zsh
 source ~/.zsh/setopt.zsh
