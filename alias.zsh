@@ -1,16 +1,13 @@
-# Need to add alllllll my aliases here...
-# Yeah later....
-
 # Ping
 alias pingg='ping -c 3 google.com'
 alias pingd='ping -c 3 8.8.8.8'
 
-# List directory
+# Listing directories
 alias ll='ls -lahG'
 alias lls='ls -aG'
 alias lh='ls -d .*'
 
-# Changing directory
+# Changing directories
 alias ..='cd ..'
 alias ...='cd ../..'
 
@@ -23,6 +20,7 @@ alias gm='git commit'
 alias gma='git commit -a'
 alias gc='git checkout'
 alias gl='git pull'
+alias gb='git branch'
 
 # ZSH
 alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zsh/zshrc'"
