@@ -29,3 +29,5 @@ alias zshrc='vim ~/.zsh/zshrc && reload'
 # Vim
 alias vimrc='vim ~/.vim/vimrc'
 
+# Pow
+alias pow_restart='touch tmp/restart.txt'
