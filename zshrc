@@ -3,10 +3,8 @@
 # There's stuff in there that should be pruned anyway
 source ~/.bash_profile
 
-export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-export PS1="[%*][%n@%M]$ "
-export EDITOR=vim
-
+source ~/.zsh/checks.zsh
+source ~/.zsh/exports.zsh
 source ~/.zsh/colors.zsh
 source ~/.zsh/setopt.zsh
 source ~/.zsh/prompt.zsh
