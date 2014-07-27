@@ -11,6 +11,9 @@ alias lh='ls -d .*'
 alias ..='cd ..'
 alias ...='cd ../..'
 
+# Creating directories
+alias mkdir='mkdir -p'
+
 # Git
 alias ga='git add'
 alias gp='git push'
@@ -28,6 +31,10 @@ alias zshrc='vim ~/.zsh/zshrc && reload'
 
 # Vim
 alias vimrc='vim ~/.vim/vimrc'
+
+# Bundler
+alias bi='bundle install'
+alias be='bundle exec'
 
 # Pow
 alias pow_restart='touch tmp/restart.txt'
