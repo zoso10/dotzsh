@@ -27,7 +27,7 @@ alias gb='git branch'
 
 # ZSH
 alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zsh/zshrc'"
-alias zshrc='vim ~/.zsh/zshrc && reload'
+alias zshrc='cd ~/.zsh; vim zshrc && reload'
 
 # Vim
 alias vimrc='vim ~/.vim/vimrc'
@@ -38,3 +38,6 @@ alias be='bundle exec'
 
 # Pow
 alias pow_restart='touch tmp/restart.txt'
+
+# Rack
+alias rackDown4What='rackup'
