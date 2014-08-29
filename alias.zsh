@@ -41,3 +41,21 @@ alias pow_restart='touch tmp/restart.txt'
 
 # Rack
 alias rackDown4What='rackup'
+
+# tmux
+alias tx='tmux'
+## tmux session management
+alias txn='tx new -s'
+alias txa='tx attach -t'
+alias txs='tx switch -t'
+alias txls='tx list-sessions'
+alias txd='tx detach'
+## tmux window management
+alias txnw='tx new-window'
+alias txw='tx select-window -t :'
+alias txrw='tx rename-window'
+## tmux pane management
+alias txv='tx split-window'
+alias txh='tx split-window -h'
+alias txsp='tx select-pane'
+alias txnp='tx select-pane -t :.+'
