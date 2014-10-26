@@ -59,3 +59,5 @@ alias txv='tx split-window'
 alias txh='tx split-window -h'
 alias txsp='tx select-pane'
 alias txnp='tx select-pane -t :.+'
+## quickly open tmux.conf
+alias tmuxconf='vim ~/.tmux/tmuxconf'
