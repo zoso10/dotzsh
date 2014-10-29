@@ -17,7 +17,7 @@ alias mkdir='mkdir -p'
 # Git
 alias ga='git add'
 alias gp='git push'
-alias gs='git status'
+alias gs='git status -s'
 alias gd='git diff'
 alias gm='git commit'
 alias gma='git commit -a'
@@ -61,3 +61,8 @@ alias txsp='tx select-pane'
 alias txnp='tx select-pane -t :.+'
 ## quickly open tmux.conf
 alias tmuxconf='vim ~/.tmux/tmuxconf'
+
+# Override autocorrect
+alias vim='nocorrect vim'
+alias ber='nocorrect bundle exec rspec'
+alias rspec='nocorrect rspec'
