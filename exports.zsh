@@ -9,3 +9,7 @@ export PS1="[%*][%n@%M]$ "
 export EDITOR=vim
 export BUNDLER_EDITOR=vim
 export PGHOST=localhost
+
+# Android
+export ANDROID_HOME=$HOME/Documents/adt-bundle-mac-x86_64-20140702/sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
