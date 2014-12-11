@@ -18,10 +18,8 @@ git_branch() {
   ref=$(git symbolic-ref HEAD --short 2> /dev/null)
 
   if [[ -n $ref ]]; then
-    echo  $ref
-  else
-    echo %1~
+    echo :$ref
   fi
 }
 
-export PROMPT='[%m] $fg_bold[red]:: $reset_color$(git_branch) $fg_bold[red]❯❯❯$reset_color '
+export PROMPT='[%2d$fg_no_bold[white]$(git_branch)$reset_color] $fg_bold[red]❯❯❯$reset_color '
