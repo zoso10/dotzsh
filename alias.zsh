@@ -66,3 +66,7 @@ alias tmuxconf='vim ~/.tmux/tmuxconf'
 alias vim='nocorrect vim'
 alias ber='nocorrect bundle exec rspec'
 alias rspec='nocorrect rspec'
+
+# Alias typos
+alias celar='clear'
+alias exti='exit'
