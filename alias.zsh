@@ -70,3 +70,4 @@ alias rspec='nocorrect rspec'
 # Alias typos
 alias celar='clear'
 alias exti='exit'
+alias eixt='exit'
