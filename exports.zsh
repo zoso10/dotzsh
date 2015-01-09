@@ -23,3 +23,4 @@ git_branch() {
 }
 
 export PROMPT='[%2d$fg_no_bold[white]$(git_branch)$reset_color] $fg_bold[red]❯❯❯$reset_color '
+export RPROMPT=''
