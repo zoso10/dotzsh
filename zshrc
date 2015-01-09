@@ -3,9 +3,9 @@
 # There's stuff in there that should be pruned anyway
 source ~/.bash_profile
 
+source ~/.zsh/colors.zsh
 source ~/.zsh/checks.zsh
 source ~/.zsh/exports.zsh
-source ~/.zsh/colors.zsh
 source ~/.zsh/setopt.zsh
 source ~/.zsh/prompt.zsh
 source ~/.zsh/completion.zsh
