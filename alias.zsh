@@ -14,6 +14,10 @@ alias ...='cd ../..'
 # Creating directories
 alias mkdir='mkdir -p'
 
+# Hub
+alias git=hub
+alias gpr='git pull-request'
+
 # Git
 alias ga='git add'
 alias gp='git push'
@@ -71,6 +75,3 @@ alias rspec='nocorrect rspec'
 alias celar='clear'
 alias exti='exit'
 alias eixt='exit'
-
-# Hub
-alias git=hub
