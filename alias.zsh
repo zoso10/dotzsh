@@ -71,3 +71,6 @@ alias rspec='nocorrect rspec'
 alias celar='clear'
 alias exti='exit'
 alias eixt='exit'
+
+# Hub
+alias git=hub
