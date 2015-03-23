@@ -23,6 +23,9 @@ git_branch() {
 }
 
 export PROMPT='[%2d$PR_WHITE$(git_branch)$RESET] $PR_BOLD_RED❯❯❯$RESET '
+#export PROMPT='$(if [[ $? == 0 ]]; then echo "ᕕ( ᐛ )ᕗ "; else echo "¯\_(ツ)_/¯ "; fi)'
+export RPROMPT='$(if [[ $? == 0 ]]; then echo ""; else echo "¯\_(ツ)_/¯"; fi)'
+#export PROMPT='$(if [[ $? == 0 ]]; then echo "👍  "; else echo "👎  "; fi)'
 
 # Docker exports
 export DOCKER_HOST=tcp://192.168.59.103:2376
