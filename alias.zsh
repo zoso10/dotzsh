@@ -75,3 +75,6 @@ alias rspec='nocorrect rspec'
 alias celar='clear'
 alias exti='exit'
 alias eixt='exit'
+
+# Flush memcached
+alias flushmem='echo flush_all | nc localhost 11211'
