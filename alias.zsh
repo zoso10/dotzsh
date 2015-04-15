@@ -78,3 +78,6 @@ alias eixt='exit'
 
 # Flush memcached
 alias flushmem='echo flush_all | nc localhost 11211'
+
+# Pretty Print JSON, mostly used for curl
+alias pp='underscore print --color'
