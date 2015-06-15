@@ -33,4 +33,4 @@ export DOCKER_CERT_PATH=/Users/tewing/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
 
 # Postgres App
-export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
