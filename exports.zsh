@@ -31,3 +31,6 @@ export RPROMPT='$(if [[ $? == 0 ]]; then echo ""; else echo "¯\_(ツ)_/¯"; fi)
 export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/tewing/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
+
+# Postgres App
+export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.4/bin
