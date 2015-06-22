@@ -13,3 +13,6 @@ source ~/.zsh/alias.zsh
 source ~/.zsh/binding.zsh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+# ezCater specific aliases
+source ~/.zsh/ezcater.zsh
