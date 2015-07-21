@@ -34,7 +34,7 @@ alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zsh/zshrc'"
 alias zshrc='cd ~/.zsh; vim zshrc && reload'
 
 # Vim
-alias vimrc='vim ~/.vim/vimrc'
+alias vimrc='cd ~/.vim && vim vimrc'
 
 # Bundler
 alias bi='bundle install'
