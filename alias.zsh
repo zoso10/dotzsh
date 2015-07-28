@@ -84,3 +84,7 @@ alias pp='underscore print --color'
 
 # Don't use Xcode ctags
 alias ctags="`brew --prefix`/bin/ctags"
+
+# Prompt switching
+alias tp="export TINY_PROMPT=1"
+alias np="export TINY_PROMPT=0"
