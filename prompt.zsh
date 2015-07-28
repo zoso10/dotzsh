@@ -27,7 +27,15 @@ shorten_dir_names() {
   fi
 }
 
-export PROMPT='[$(shorten_dir_names)$PR_WHITE$(git_branch)$RESET] $PR_BOLD_RED❯❯❯$RESET '
+prompt() {
+  if [[ "$TINY_PROMPT" -eq 1 ]]; then
+    echo "$PR_BOLD_RED❯$RESET "
+  else
+    echo "[$(shorten_dir_names)$PR_WHITE$(git_branch)$RESET] $PR_BOLD_RED❯❯❯$RESET "
+  fi
+}
+
+export PROMPT='$(prompt)'
 export RPROMPT='$(if [[ $? == 0 ]]; then echo ""; else echo "¯\_(ツ)_/¯"; fi)'
 
 # LOL Prompts
