@@ -16,11 +16,14 @@ shorten_dir_names() {
   BRANCH=$(git_branch)
   BRANCH_LEN=${#BRANCH}
   DIR=$(pwd)
-  DIR_LEN=${#DIR}
+  FIRST_DIR=$(basename $DIR)
+  SECOND_DIR=$(echo "${$(basename $(echo "${DIR//$FIRST_DIR/}"))//./}")
+  FIRST_FIRST_LETTER=$(echo $(echo "${FIRST_DIR//./}") | head -c 1)
+  SECOND_FIRST_LETTER=$(echo $SECOND_DIR | head -c 1)
+  COMBINED_DIR="$SECOND_DIR/$FIRST_DIR"
+  DIR_LEN=${#COMBINED_DIR}
+
   if [[ "$BRANCH_LEN" -gt "$PROMPT_MAX_LEN" ]] || [[ "$DIR_LEN" -gt "$PROMPT_MAX_LEN" ]]; then
-    FIRST_DIR=$(basename $DIR)
-    FIRST_FIRST_LETTER=$(echo $(echo "${FIRST_DIR//./}") | head -c 1)
-    SECOND_FIRST_LETTER=$(echo $(echo "${$(basename $(echo "${DIR//$FIRST_DIR/}"))//./}") | head -c 1)
     echo "$SECOND_FIRST_LETTER/$FIRST_FIRST_LETTER"
   else
     echo "%2d"
