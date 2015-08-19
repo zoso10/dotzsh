@@ -22,6 +22,7 @@ alias gpr='git pull-request'
 alias ga='git add'
 alias gp='git push'
 alias gs='git status -s'
+alias g='gs'
 alias gd='git diff'
 alias gm='git commit'
 alias gma='git commit -a'
@@ -86,5 +87,5 @@ alias pp='underscore print --color'
 alias ctags="`brew --prefix`/bin/ctags"
 
 # Prompt switching
-alias tp="export TINY_PROMPT=1"
-alias np="export TINY_PROMPT=0"
+alias tiny="export TINY_PROMPT=1"
+alias norm="export TINY_PROMPT=0"
