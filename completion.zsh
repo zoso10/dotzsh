@@ -13,3 +13,5 @@ zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %
 # Match uppercase from lowercase
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
+# Git completion
+zstyle ':completion:*:*:git:*' script ~/.completion/git/.git-completion.sh
