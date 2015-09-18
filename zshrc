@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+# rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
 # For git completion
 fpath=(~/.zsh $fpath)
 
