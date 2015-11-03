@@ -21,3 +21,6 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 if [ -f ~/.zsh/ezcater.zsh ]; then
     source ~/.zsh/ezcater.zsh
 fi
+
+# Virtualenv/VirtualenvWrapper
+source /usr/local/bin/virtualenvwrapper.sh
