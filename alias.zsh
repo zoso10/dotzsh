@@ -89,3 +89,6 @@ alias ctags="`brew --prefix`/bin/ctags"
 # Prompt switching
 alias tiny="export TINY_PROMPT=1"
 alias norm="export TINY_PROMPT=0"
+
+# Add some defaults for grep
+alias grep="grep --color -E"
