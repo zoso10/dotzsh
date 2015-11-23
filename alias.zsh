@@ -29,6 +29,8 @@ alias gma='git commit -a'
 alias gc='git checkout'
 alias gl='git pull'
 alias gb='git branch'
+alias gg='git grep'
+alias gw='git worktree'
 
 # ZSH
 alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zsh/zshrc'"
