@@ -14,6 +14,7 @@ source ~/.zsh/prompt.zsh
 source ~/.zsh/completion.zsh
 source ~/.zsh/alias.zsh
 source ~/.zsh/binding.zsh
+source ~/.zsh/functions.zsh
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
