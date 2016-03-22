@@ -16,8 +16,6 @@ source ~/.zsh/alias.zsh
 source ~/.zsh/binding.zsh
 source ~/.zsh/functions.zsh
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
-
 # ezCater specific aliases
 if [ -f ~/.zsh/ezcater.zsh ]; then
     source ~/.zsh/ezcater.zsh
