@@ -93,6 +93,6 @@ alias tiny="export TINY_PROMPT=1"
 alias norm="export TINY_PROMPT=0"
 
 # Add some defaults for grep
-alias grep="grep --color -E"
+alias grep="grep --color"
 
 alias weather='weather --units us --location "Boston, MA"'
