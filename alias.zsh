@@ -71,7 +71,7 @@ alias tmuxconf='vim ~/.tmux/tmuxconf'
 
 # Override autocorrect
 alias vim='nocorrect vim'
-alias ber='nocorrect bundle exec rspec'
+alias ber='nocorrect bundle exec rake'
 alias rspec='nocorrect rspec'
 
 # Alias typos
