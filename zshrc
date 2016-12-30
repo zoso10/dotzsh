@@ -1,8 +1,5 @@
 #!/bin/zsh
 
-# rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
 # For git completion
 fpath=(~/.zsh $fpath)
 
@@ -23,3 +20,6 @@ fi
 
 # Virtualenv/VirtualenvWrapper
 source /usr/local/bin/virtualenvwrapper.sh
+
+# rbenv
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
