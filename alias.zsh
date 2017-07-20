@@ -31,6 +31,7 @@ alias gl='git plf'
 alias gb='git branch'
 alias gg='git grep'
 alias gw='git worktree'
+alias gf='git fetch'
 
 # ZSH
 alias reload=". ~/.zshrc && echo 'ZSH config reloaded from ~/.zsh/zshrc'"
