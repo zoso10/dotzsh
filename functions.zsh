@@ -10,5 +10,5 @@ function git_history_grep_for() {
 
 function current_diff() {
   git fetch --tags --quiet;
-  open "https://github.com/ezcater/ez-rails/compare/`git describe --abbrev=0 --tags`...master"
+  open "https://github.com/ezcater/ez-rails/compare/`git describe --abbrev=0 --tags`...`git rev-parse HEAD`"
 }
