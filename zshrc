@@ -1,8 +1,5 @@
 #!/bin/zsh
 
-# For git completion
-fpath=(~/.zsh $fpath)
-
 source ~/.zsh/colors.zsh
 source ~/.zsh/checks.zsh
 source ~/.zsh/exports.zsh
