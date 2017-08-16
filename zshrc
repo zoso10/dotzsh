@@ -15,8 +15,5 @@ if [ -f ~/.zsh/ezcater.zsh ]; then
     source ~/.zsh/ezcater.zsh
 fi
 
-# Virtualenv/VirtualenvWrapper
-source /usr/local/bin/virtualenvwrapper.sh
-
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
