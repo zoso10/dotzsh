@@ -87,7 +87,9 @@ alias flushmem='echo flush_all | nc localhost 11211'
 alias pp='underscore print --color'
 
 # Don't use Xcode ctags
-alias ctags="`brew --prefix`/bin/ctags"
+if [ "$HAS_BREW" ]; then
+  alias ctags="`brew --prefix`/bin/ctags"
+fi
 
 # Prompt switching
 alias tiny="export TINY_PROMPT=1"

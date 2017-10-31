@@ -10,5 +10,15 @@ function git_history_grep_for() {
 
 function current_diff() {
   git fetch --tags --quiet;
-  open "https://github.com/ezcater/ez-rails/compare/`git describe --abbrev=0 --tags`...`git rev-parse HEAD`"
+  open "https://github.com/ezcater/`basename "$PWD"`/compare/`git describe --abbrev=0 --tags`...`git rev-parse HEAD`"
+}
+
+function delete_merged_branches() {
+  for branch in `git branch --merged`; do
+    if [ "$branch" = "master" ] || [ "$branch" = "*" ] ; then
+      echo "skipping branch: $branch"
+    else
+      git branch -d $branch
+    fi
+  done
 }
