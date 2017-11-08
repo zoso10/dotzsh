@@ -12,7 +12,7 @@ source ~/.zsh/functions.zsh
 
 # ezCater specific aliases
 if [ -f ~/.zsh/ezcater.zsh ]; then
-    source ~/.zsh/ezcater.zsh
+  source ~/.zsh/ezcater.zsh
 fi
 
 # rbenv
