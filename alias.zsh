@@ -99,3 +99,5 @@ alias norm="export TINY_PROMPT=0"
 alias grep="grep --color"
 
 alias weather='weather --units us --location "Boston, MA"'
+
+alias ducks="du -cks * | sort -rn | head -11"
