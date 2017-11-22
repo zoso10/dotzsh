@@ -13,9 +13,11 @@ export ANDROID_HOME=$HOME/Documents/adt-bundle-mac-x86_64-20140702/sdk
 export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 # Docker exports
-export DOCKER_HOST=tcp://192.168.59.103:2376
-export DOCKER_CERT_PATH=/Users/tewing/.boot2docker/certs/boot2docker-vm
-export DOCKER_TLS_VERIFY=1
+if [ "$IS_MAC" ]; then
+  export DOCKER_HOST=tcp://192.168.59.103:2376
+  export DOCKER_CERT_PATH=/Users/tewing/.boot2docker/certs/boot2docker-vm
+  export DOCKER_TLS_VERIFY=1
+fi
 
 # Postgres App
 export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
