@@ -10,7 +10,12 @@ function git_history_grep_for() {
 
 function current_diff() {
   git fetch --tags --quiet;
-  open "https://github.com/ezcater/`basename "$PWD"`/compare/`git describe --abbrev=0 --tags`...`git rev-parse HEAD`"
+  local url="https://github.com/ezcater/`basename "$PWD"`/compare/`git describe --abbrev=0 --tags`...`git rev-parse HEAD`"
+  if [ "$IS_MAC" ]; then
+    open $url
+  else
+    xdg-open $url > /dev/null 2>&1
+  fi
 }
 
 function delete_merged_branches() {
