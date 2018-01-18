@@ -17,3 +17,6 @@ export PATH=$PATH:/Applications/Postgres.app/Contents/Versions/9.3/bin
 # MySQL
 export MYSQL_HOME=/usr/local/mysql
 export PATH=$MYSQL_HOME/bin:$PATH
+
+# GPG
+export GPG_TTY=$(tty)
