@@ -12,8 +12,10 @@ function current_diff() {
   git fetch --tags --quiet;
   local url="https://github.com/ezcater/`basename "$PWD"`/compare/`git describe --abbrev=0 --tags`...`git rev-parse HEAD`"
   if [ "$IS_MAC" ]; then
+    echo $url | pbcopy
     open $url
   else
+    echo $url | xclip -selection c
     xdg-open $url > /dev/null 2>&1
   fi
 }
