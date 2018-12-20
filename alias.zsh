@@ -41,6 +41,7 @@ alias zshrc='cd ~/.zsh; vim zshrc && reload'
 alias vimrc='cd ~/.vim && vim vimrc'
 
 # Bundler
+alias 🅱️='bundle'
 alias b='bundle'
 alias be='bundle exec'
 
