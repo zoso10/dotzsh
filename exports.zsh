@@ -8,7 +8,7 @@ export PGHOST=localhost
 export PATH=$PATH:$HOME/.rbenv/bin
 
 # Go
-export GOPATH=$HOME/go
+export GOPATH=$HOME/.go
 export PATH=$PATH:$GOPATH/bin
 
 # Postgres App
