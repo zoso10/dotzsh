@@ -15,8 +15,8 @@ alias ...='cd ../..'
 alias mkdir='mkdir -p'
 
 # Hub
-alias git=hub
-alias gpr='git pull-request'
+# alias git=hub
+# alias gpr='git pull-request'
 
 # Git
 alias ga='git add'
