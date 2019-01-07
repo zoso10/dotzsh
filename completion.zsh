@@ -14,4 +14,6 @@ zstyle ':completion:*' select-prompt '%SScrolling active: current selection at %
 zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 
 # Git completion
+zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.zsh
+
 fpath=(~/.zsh $fpath)
