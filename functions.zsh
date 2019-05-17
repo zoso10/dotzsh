@@ -29,3 +29,7 @@ function delete_merged_branches() {
     fi
   done
 }
+
+function wireless_status() {
+  watch -n 1 -t "awk 'NR==3 {print \"quality: \" (\$3/70)*100 \"%\nlevel: \" (\$4/100)*100 \" dB\"}''' /proc/net/wireless"
+}
