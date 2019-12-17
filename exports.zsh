@@ -6,7 +6,7 @@ export BUNDLER_EDITOR=vim
 export PGHOST=localhost
 
 # Ruby
-export PATH=$PATH:$HOME/.rbenv/bin
+export PATH=$HOME/.rbenv/bin:$PATH
 
 # Go
 export GOPATH=$HOME/.go
