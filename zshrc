@@ -9,6 +9,7 @@ source ~/.zsh/completion.zsh
 source ~/.zsh/alias.zsh
 source ~/.zsh/binding.zsh
 source ~/.zsh/functions.zsh
+source ~/.zsh/misc.zsh
 
 # ezCater specific aliases
 if [ -f ~/.zsh/ezcater.zsh ]; then
