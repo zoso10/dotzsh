@@ -100,3 +100,5 @@ alias norm="export TINY_PROMPT=0"
 alias grep="grep --color"
 
 alias ducks="du -cks * | sort -rn | head -11"
+
+alias selfie="vlc -I dummy v4l2:///dev/video0 --video-filter scene --no-audio --scene-path /home/tyler/Pictures --scene-prefix image_prefix --scene-format png vlc://quit--run-time=1"
