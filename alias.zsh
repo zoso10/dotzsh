@@ -101,4 +101,4 @@ alias grep="grep --color"
 
 alias ducks="du -cks * | sort -rn | head -11"
 
-alias selfie="vlc -I dummy v4l2:///dev/video0 --video-filter scene --no-audio --scene-path /home/tyler/Pictures --scene-prefix image_prefix --scene-format png vlc://quit--run-time=1"
+alias selfie="vlc v4l2:///dev/video0 --video-filter=scene --scene-path=/home/tyler/Pictures --scene-format=png -I dummy -A dummy vlc://quit"
