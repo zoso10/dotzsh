@@ -44,6 +44,7 @@ alias vimrc='cd ~/.vim && vim vimrc'
 alias 🅱️='bundle'
 alias b='bundle'
 alias be='bundle exec'
+alias bump='bundle update'
 
 # Pow
 alias pow_restart='touch tmp/restart.txt'
