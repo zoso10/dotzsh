@@ -31,3 +31,5 @@ export NVM_DIR="$HOME/.nvm"
 export PATH=$HOME/.tfenv/bin:$PATH
 
 export HISTFILE=~/.histfile
+
+export NVM_DIR="$HOME/.nvm"
