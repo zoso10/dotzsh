@@ -31,6 +31,5 @@ export NVM_DIR="$HOME/.nvm"
 # Terraform
 export PATH=$HOME/.tfenv/bin:$PATH
 
+# History file
 export HISTFILE=~/.histfile
-
-export NVM_DIR="$HOME/.nvm"
