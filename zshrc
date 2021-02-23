@@ -16,8 +16,8 @@ if [ -f ~/.zsh/ezcater.zsh ]; then
   source ~/.zsh/ezcater.zsh
 fi
 
-# asdf
-. $HOME/.asdf/asdf.sh
-
 # rbenv
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
+
+# asdf
+. $HOME/.asdf/asdf.sh

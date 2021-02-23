@@ -103,3 +103,6 @@ alias grep="grep --color"
 alias ducks="du -cks * | sort -rn | head -11"
 
 alias selfie="vlc v4l2:///dev/video0 --video-filter=scene --scene-path=/home/tyler/Pictures --scene-format=png -I dummy -A dummy vlc://quit"
+
+# Structurizr
+alias structurizr="docker run --rm -v "${PWD}":/root/data ghcr.io/aidmax/structurizr-cli-docker:latest"
