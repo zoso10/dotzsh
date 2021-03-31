@@ -22,5 +22,8 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 # asdf
 . $HOME/.asdf/asdf.sh
 
+# rust
+source "$HOME/.cargo/env"
+
 # direnv
 eval "$(direnv hook zsh)"
