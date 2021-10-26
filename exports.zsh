@@ -30,5 +30,11 @@ export GPG_TTY=$(tty)
 # Terraform
 export PATH=$HOME/.tfenv/bin:$PATH
 
+# Kubectl Krew
+export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
+
 # History file
 export HISTFILE=~/.histfile
+
+# Dart
+ export PATH="$PATH:/usr/lib/dart/bin"
