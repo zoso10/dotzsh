@@ -1,6 +1,3 @@
-autoload -U compinit && compinit
-zmodload -i zsh/complist
-
 # Fallback to built in ls colors
 zstyle ':completion:*' list-colors ''
 
@@ -17,3 +14,7 @@ zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
 zstyle ':completion:*:*:git:*' script ~/.zsh/git-completion.zsh
 
 fpath=(~/.zsh $fpath)
+fpath=(${ASDF_DIR}/completions $fpath)
+
+autoload -Uz compinit && compinit
+zmodload -i zsh/complist

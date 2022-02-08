@@ -1,5 +1,8 @@
 #!/bin/zsh
 
+# asdf
+. $HOME/.asdf/asdf.sh
+
 source ~/.zsh/colors.zsh
 source ~/.zsh/checks.zsh
 source ~/.zsh/exports.zsh
@@ -17,10 +20,7 @@ if [ -f ~/.zsh/ezcater.zsh ]; then
 fi
 
 # rbenv
-if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
-
-# asdf
-. $HOME/.asdf/asdf.sh
+if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
 # rust
 source "$HOME/.cargo/env"
