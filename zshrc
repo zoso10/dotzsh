@@ -1,7 +1,12 @@
 #!/bin/zsh
 
 # asdf
-. $HOME/.asdf/asdf.sh
+if [[ -x `which brew` ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+  . `brew --prefix asdf`/libexec/asdf.sh
+else
+  . $HOME/.asdf/asdf.sh
+fi
 
 source ~/.zsh/colors.zsh
 source ~/.zsh/checks.zsh
@@ -23,7 +28,11 @@ fi
 if which rbenv > /dev/null; then eval "$(rbenv init - zsh)"; fi
 
 # rust
-source "$HOME/.cargo/env"
+if [ -f $HOME/.cargo/env ]; then
+  source "$HOME/.cargo/env"
+fi
 
 # direnv
-eval "$(direnv hook zsh)"
+if [[ -x `which direnv` ]]; then
+  eval "$(direnv hook zsh)"
+fi

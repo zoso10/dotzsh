@@ -37,4 +37,4 @@ export PATH="${KREW_ROOT:-$HOME/.krew}/bin:$PATH"
 export HISTFILE=~/.histfile
 
 # Dart
- export PATH="$PATH:/usr/lib/dart/bin"
+export PATH="$PATH:/usr/lib/dart/bin"
