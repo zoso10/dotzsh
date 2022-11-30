@@ -1,8 +1,8 @@
 #!/bin/zsh
 
 # asdf
+eval "$(/opt/homebrew/bin/brew shellenv)"
 if [[ -x `which brew` ]]; then
-  eval "$(/opt/homebrew/bin/brew shellenv)"
   . `brew --prefix asdf`/libexec/asdf.sh
 else
   . $HOME/.asdf/asdf.sh
@@ -22,6 +22,11 @@ source ~/.zsh/misc.zsh
 # ezCater specific aliases
 if [ -f ~/.zsh/ezcater.zsh ]; then
   source ~/.zsh/ezcater.zsh
+fi
+#
+# Hunt Club specific aliases
+if [ -f ~/.zsh/huntclub.zsh ]; then
+  source ~/.zsh/huntclub.zsh
 fi
 
 # rbenv

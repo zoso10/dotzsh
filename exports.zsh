@@ -7,6 +7,7 @@ export PGHOST=localhost
 # Ruby
 export PATH=$HOME/.rbenv/bin:$PATH
 export PATH=$HOME/.rbenv/shims:$PATH
+export PATH="$PATH:$HOME/.rvm/bin"
 
 # Go
 export GOPATH=$HOME/.go
