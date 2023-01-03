@@ -22,7 +22,7 @@ function current_diff() {
 
 function delete_merged_branches() {
   for branch in `git branch --merged`; do
-    if [ "$branch" = "master" ] || [ "$branch" = "*" ] ; then
+    if [ "$branch" = "master" ] || [ "$branch" = "main" ] || [ "$branch" = "*" ]; then
       echo "skipping branch: $branch"
     else
       git branch -d $branch
