@@ -39,3 +39,7 @@ export HISTFILE=~/.histfile
 
 # Dart
 export PATH="$PATH:/usr/lib/dart/bin"
+
+# Fly.io
+export FLYCTL_INSTALL="$HOME/.fly"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"
